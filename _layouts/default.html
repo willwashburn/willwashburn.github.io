@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Rock+Salt|Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+    <div class="header" style="background-image:url('{{ page.img }}')">
+        <div class="logo">
+            <a href="/">
+                W<sup>2</sup>
+            </a>
+        </div>
+    </div>
+
+        <div class="site">
+
+          {{ content }}
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                  Will Washburn<br/>
+                  hello@willwashburn.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/willwashburn">github.com/willwashburn</a><br />
+                <a href="https://twitter.com/willwashburn">twitter.com/willwashburn</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

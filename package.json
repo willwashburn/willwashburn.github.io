@@ -1,0 +1,28 @@
+{
+  "name": "willwashburn/blog",
+  "version": "0.0.1",
+  "description": "A jekyll blog",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Will Washburn",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-sass": "^2.1.0",
+    "browser-sync": "^1.3.7",
+    "gulp-autoprefixer": "1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willwashburn/willwashburn.github.io.git"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "homepage": "http://www.willwashburn.com"
+}
