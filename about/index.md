@@ -38,3 +38,13 @@ Fine. 32/33.
 
 I'm also a full stack web developer that likes to play with technology that I can use in hackathons. That wasn't supposed to sound like a joke, but it did.
 
+
+
+ruby -rubygems -e 'require "jekyll-import";
+    JekyllImport::Importers::Tumblr.run({
+      "url"            => "http://blog.willwashburn.com",
+      "format"         => "html", # or "md"
+      "grab_images"    => true,  # whether to download images as well.
+      "add_highlights" => false,  # whether to wrap code blocks (indented 4 spaces) in a Liquid "highlight" tag
+      "rewrite_urls"   => false   # whether to write pages that redirect from the old Tumblr paths to the new Jekyll paths
+    })'

@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
+{% if page.heading == null %}
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+{% endif%}
+
+<p class="meta">{{ page.date | date: '%B %d, %Y' }}</p>
 
 <div class="post">
 {{ content }}

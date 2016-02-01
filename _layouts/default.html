@@ -13,12 +13,24 @@
     </head>
     <body>
 
-    <div class="header" style="background-image:url('{{ page.img }}')">
+    <div class="header" style="background-image:url('{{ page.img }}'); height:{{page.header_height}}; background-position: {{page.header_position}};background-color: #{{page.header_background}};">
         <div class="logo">
             <a href="/">
                 W<sup>2</sup>
             </a>
         </div>
+        {% if page.heading %}
+        <div class="heading-wrap">
+
+            <h1>{{page.heading}} </h1>
+
+            {% if page.sub_heading %}
+            <h2>{{page.sub_heading}} </h2>
+            {% endif%}
+
+        </div>
+        {% endif%}
+
     </div>
 
         <div class="site">

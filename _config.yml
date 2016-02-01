@@ -4,3 +4,24 @@ redcarpet:
     extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      img: /img/underwater.jpg
+      header_height: 500px
+      header_position: center center
+      header_background: 097577
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      img: /img/underwater.jpg
+      header_height: 500px
+      header_position: center center
+      header_background: 097577
