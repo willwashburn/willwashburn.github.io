@@ -1,12 +1,58 @@
 ---
-layout: default
+layout: template
 ---
+<div class="row columns">
+
+    <div class="small-12 medium-6 medium-offset-1 column">
 {% if page.heading == null %}
 <h2>{{ page.title }}</h2>
 {% endif%}
 
 <p class="meta">{{ page.date | date: '%B %d, %Y' }}</p>
 
-<div class="post">
-{{ content }}
+    {{ content }}
+    </div>
+    <div class="small-12 medium-4 medium-offset-1 end column">
+        <br/>
+        <h5>Reasons you should probably follow me</h5>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Put my frontend in the backend, backbone got marionetted nodejs with express so my requests? properly headed <a href="https://twitter.com/hashtag/NerdRap?src=hash">#NerdRap</a></p>&mdash; Will Washburn (@willwashburn) <a href="https://twitter.com/willwashburn/status/307171755536039937">February 28, 2013</a></blockquote>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Dot files, hot files, got my bash script looking like I bought files - you cash stripped, weak equipped. Your bashrc? nondescript <a href="https://twitter.com/hashtag/NerdRap?src=hash">#NerdRap</a></p>&mdash; Will Washburn (@willwashburn) <a href="https://twitter.com/willwashburn/status/321333852524146688">April 8, 2013</a></blockquote>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My git commits legit <br>refactor never a factor when I submit<br>my lamp stack so high you have 2 admit it might b time 2 call forefeit <a href="https://twitter.com/hashtag/nerdrap?src=hash">#nerdrap</a></p>&mdash; Will Washburn (@willwashburn) <a href="https://twitter.com/willwashburn/status/146667472085463040">December 13, 2011</a></blockquote>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+
+
+<div class="footer">
+
+
+    <div class="col-xs-12">
+
+        <div class="header-spacer">
+            <a class="img" href="/"
+               style="background-image: url(https://scontent-lga3-1.cdninstagram.com/t51.2885-19/s320x320/12353205_1534425316874929_1573002040_a.jpg)">
+                <span class="hidden">Will</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 col-md-2 row column text-center">
+
+        <h4>Will Washburn</h4>
+
+        <div class="col-xs-12">
+            <p>
+                Someone probably thought I was a really good dancer at a wedding I went to one time.
+                I also build products with software.
+            </p>
+            <p>Read more about <a href="/about">who I am</a>, star one of my <a
+                    href="http://github.com/willwashburn">Github repos</a> or check
+                out my <a href="lol">rap career</a></p>
+        </div>
+
+
+
+    </div>
+
 </div>

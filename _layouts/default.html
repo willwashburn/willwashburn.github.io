@@ -1,57 +1,31 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+---
+layout: template
+---
+<div class="header"
+     style="background-image:url('{{ page.img }}'); height:{{page.header_height}}; background-position: {{page.header_position}};background-color: #{{page.header_background}};">
+    <div class="logo">
+        <a href="/">
+            W<sup>2</sup>
+        </a>
+    </div>
+    {% if page.heading %}
+    <div class="heading-wrap">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Rock+Salt|Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+        <h1>{{page.heading}} </h1>
 
-    </head>
-    <body>
-
-    <div class="header" style="background-image:url('{{ page.img }}'); height:{{page.header_height}}; background-position: {{page.header_position}};background-color: #{{page.header_background}};">
-        <div class="logo">
-            <a href="/">
-                W<sup>2</sup>
-            </a>
-        </div>
-        {% if page.heading %}
-        <div class="heading-wrap">
-
-            <h1>{{page.heading}} </h1>
-
-            {% if page.sub_heading %}
-            <h2>{{page.sub_heading}} </h2>
-            {% endif%}
-
-        </div>
+        {% if page.sub_heading %}
+        <h2>{{page.sub_heading}} </h2>
         {% endif%}
 
     </div>
+    {% endif%}
 
-        <div class="site">
+</div>
 
-          {{ content }}
+<div class="site">
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                  Will Washburn<br/>
-                  hello@willwashburn.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/willwashburn">github.com/willwashburn</a><br />
-                <a href="https://twitter.com/willwashburn">twitter.com/willwashburn</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+    {{ content }}
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Put my frontend in the backend, backbone got marionetted nodejs with express so my requests? properly headed <a href="https://twitter.com/hashtag/NerdRap?src=hash">#NerdRap</a></p>&mdash; Will Washburn (@willwashburn) <a href="https://twitter.com/willwashburn/status/307171755536039937">February 28, 2013</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    </body>
-</html>
+</div>

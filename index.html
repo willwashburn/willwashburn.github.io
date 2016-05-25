@@ -1,16 +1,32 @@
 ---
-layout: default
-title: Will Washburn | The Third In A Series of Will Washburns
-img: /img/underwater.jpg
+layout: template
+title: Will Washburn | The Third In A Series of William Washburns
 ---
-<a href="/about">About</a>
 
-<div id="home">
+<div class="callout large welcome-hero">
+  <div class="row column text-center splash-text">
+    <h1>Will Washburn</h1>
+    <h3>
+      currently making things suck less for people at <a href="https://www.tailwindapp.com">Tailwind</a><br/>
+      previously made <a href="http://www.socialblendr.com">people less</a> lonely <br />
+      soon I'll be making you roll your eyes with a terrible pun
+    </h3>
+  <ul class="nav">
+    <li><a href="https://github.com/willwashburn"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://twitter.com/willwashburn"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.instagram.com/willwashburn"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/willwashburn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a>Blog</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+  </div>
+</div>
 
-  <h1>Blog Posts</h1>
+<div class="row column">
+  <h3> Recent Posts <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></h3>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date: '%B %d, %Y' }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
