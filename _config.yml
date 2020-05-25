@@ -1,13 +1,14 @@
-name: Will Washburn
-markdown: redcarpet
-redcarpet:
-    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
-highlighter: rouge # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+title: Tailwind Jekyll Starter Kit
+description: A starter kit for using Tailwind with Jekyll
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js

@@ -1,31 +1,35 @@
 ---
-layout: template
 ---
-<div class="header"
-     style="background-image:url('{{ page.img }}'); height:{{page.header_height}}; background-position: {{page.header_position}};background-color: #{{page.header_background}};">
-    <div class="logo">
-        <a href="/">
-            W<sup>2</sup>
-        </a>
-    </div>
-    {% if page.heading %}
-    <div class="heading-wrap">
+<html class="no-js" lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ page.title }} | The 3rd William in a series</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-        <h1>{{page.heading}} </h1>
+    <!-- Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Muli:400,400i,600"
+          rel="stylesheet"/>
 
-        {% if page.sub_heading %}
-        <h2>{{page.sub_heading}} </h2>
-        {% endif%}
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+    <script async src="//platform.twitter.com/widgets.js"
+            charset="utf-8"></script>
 
-    </div>
-    {% endif%}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-5176342-10"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-</div>
+      function gtag() {dataLayer.push(arguments);}
 
-<div class="site">
-
+      gtag('js', new Date());
+      gtag('config', 'UA-5176342-10');
+    </script>
+</head>
+<main>
     {{ content }}
-    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Put my frontend in the backend, backbone got marionetted nodejs with express so my requests? properly headed <a href="https://twitter.com/hashtag/NerdRap?src=hash">#NerdRap</a></p>&mdash; Will Washburn (@willwashburn) <a href="https://twitter.com/willwashburn/status/307171755536039937">February 28, 2013</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-</div>
+</main>
+</html>
