@@ -2,10 +2,10 @@
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
-@tailwind utilities;
 
 a {
     text-decoration: underline;
     color: theme('colors.blue.600');
 }
 
+@tailwind utilities;

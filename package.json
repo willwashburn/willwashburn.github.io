@@ -21,7 +21,7 @@
     "build:production": "cross-env NODE_ENV=production gulp",
     "build:dev": "cross-env NODE_ENV=development gulp",
     "build": "npm run build:production",
-    "dev": "cross-env NODE_ENV=development gulp serve",
+    "dev": "cross-env NODE_ENV=production gulp serve",
     "start": "npm run dev"
   },
   "repository": {
