@@ -1,0 +1,51 @@
+---
+title: These are some of Will's stories
+layout: default
+---
+<body class="bg-gray-100">
+<div class="px-8 py-12 max-w-md mx-auto">
+    <img class="rounded-sm shadow-xl" src="/img/man-and-a-house.jpeg" alt="">
+
+    <h1 class="mt-6 leading-2 text-2xl font-bold text-gray-900 leading-none">
+        Hey what's up it's your boi <span class="text-blue-400">Will</span>
+        aka <span class="text-blue-400">Mr. No Home</span>
+    </h1>
+
+    <p class="mt-6 text-gray-900">
+        If you've made it here chances are you know me. If you don't, you should probably
+        start by reading <a href="/">this</a> where you'll learn all about how
+        I am an influencer and an all around <strike>narcissist</strike> great guy.
+    </p>
+
+    <p class="mt-6 text-gray-900">
+        I've been fortunate to travel a lot, and despite most people's obvious disinterested body language and multiple
+        "thats crazy"s I like to tell stories about it.
+    </p>
+
+    <p class="mt-6 text-gray-900">
+        Writing these here is mostly for me but hopefully you also enjoy it. If
+        you don't -- please tell me all about it in detail on twitter.
+    </p>
+
+    <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-none">
+        Read some of my totally not boring <span class="text-blue-400">stories</span> from my travels
+    </h1>
+
+    {% for post in site.posts %}
+
+    <a href="{{post.url }}"
+       class="flex rounded-lg bg-white shadow-lg overflow-hidden mt-6 block no-underline">
+        <img class="w-32 object-cover object-center" src="{{post.img}}" nopin=true alt=""/>
+        <div class="px-6 py-4">
+            <h4 class="text-lg font-semibold text-gray-800">{{ post.title }}</h4>
+            <div class="text-gray-700 text-sm">{{post.date | date: "%B %-d, %Y" }}</div>
+            <div class="text-gray-800 text-sm">{{post.place}}</div>
+        </div>
+    </a>
+
+    {% endfor %}
+</div>
+
+{% include footer.html %}
+
+</body>
