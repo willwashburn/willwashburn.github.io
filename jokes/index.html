@@ -1,0 +1,37 @@
+---
+title: These are some of Will's jokes
+layout: default
+---
+<body class="bg-gray-200">
+<div class="bg-gray-100">
+<div class="px-8 py-12 max-w-md mx-auto">
+    <img class="rounded-sm shadow-xl" src="/img/goat.jpeg" alt="A digital nomad joke">
+
+    <h1 class="mt-6 leading-2 text-2xl font-semibold text-gray-900 leading-none">
+        Hey what's up it's your boi <span class="text-blue-400">Will</span>
+        aka <span class="text-blue-400">Mr. Make Your Eyes Roll</span>
+    </h1>
+
+    <p class="mt-6 text-gray-900">
+        In those brief moments during work meetings where people are silent and
+        we're all waiting for the host or final people to roll in, I like to
+        unleash these jokes on coworkers. Now you can do the same.
+    </p>
+
+    <ul>
+        {% for joke in site.pages %}
+        {% if joke.type == 'joke' %}
+        <a href="{{joke.url}}"
+           class="flex rounded-lg bg-white shadow-lg overflow-hidden mt-6 block no-underline">
+            <div class="px-6 py-4">
+                <h4 class="text-lg font-semibold text-gray-800">{{ joke.title }}</h4>
+            </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+</div>
+{% include footer.html %}
+
+</body>
